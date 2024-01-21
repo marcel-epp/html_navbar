@@ -4,28 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="/assets/javascript/main.js" defer></script>
     <title>HTML | Hello World!</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header-inner flex flex-wrap flex-center-items flex-justify-between">
-        <div>
-          <span>HTML Navbar</span>
+  <body class="body">
+    <header class="header" data-js="header">
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <span class="navbar__brand__logo">Logo</span>
+          <button class="navbar__brand__button" type="button" data-js="navbar__brand__button">
+            <img class="navbar__brand__button__image" src="/assets/images/menu_toggle.svg" alt="Menu Toggle" />
+          </button>
         </div>
-        <nav class="navbar">
-          <ul class="flex flex-wrap flex-gap-10">
-            <li><a class="navbar-link" href="#">Home</a></li>
-            <li><a class="navbar-link" href="#">Work</a></li>
-            <li><a class="navbar-link" href="#">Contact</a></li>
-            <li><a class="navbar-link" href="#">About</a></li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="navbar__menu" data-js="navbar__menu">
+          <li class="navbar__menu__item">
+            <a class="navbar__menu__item__link" href="#">Home</a>
+          </li>
+          <li class="navbar__menu__item">
+            <a class="navbar__menu__item__link" href="#">Work</a>
+          </li>
+          <li class="navbar__menu__item">
+            <a class="navbar__menu__item__link" href="#">Contact</a>
+          </li>
+          <li class="navbar__menu__item">
+            <a class="navbar__menu__item__link" href="#">About</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <h1>HTML Navbar</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus optio labore, expedita quam iste debitis sit
-      similique quidem animi, cum tenetur necessitatibus vel dolore a dolores aspernatur maxime eum. Accusantium.
-    </p>
+    <main class="main">
+      <h1>HTML Navbar</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus optio labore, expedita quam iste debitis sit
+        similique quidem animi, cum tenetur necessitatibus vel dolore a dolores aspernatur maxime eum. Accusantium.
+      </p>
+    </main>
   </body>
 </html>
